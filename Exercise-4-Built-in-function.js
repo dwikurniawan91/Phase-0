@@ -1,8 +1,10 @@
 var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
 function dataHandling2() {
+    input.pop();
     input.splice(1,1,"Roman Alamsyah Elsharawy");
     input.splice(2,1,"Provinsi Bandar Lampung");
     input.push("Pria", "SMA Internasional Metro");
+    console.log(input);
     //split
     var tanggal = input[3];
     var split = tanggal.split('/');
@@ -15,37 +17,37 @@ function dataHandling2() {
             console.log('January');
             break;
         case '02': 
-            console.log('January');
-            break;
-        case '03': 
             console.log('February');
             break;
+        case '03': 
+            console.log('Maret');
+            break;
         case '04': 
-            console.log('January');
+            console.log('April');
             break;
         case '05': 
-            console.log('January');
+            console.log('May');
             break;
         case '06': 
-            console.log('January');
+            console.log('June');
             break;
         case '07': 
-            console.log('January');
+            console.log('July');
             break;
         case '08': 
-            console.log('January');
+            console.log('August');
             break;
         case '09': 
-            console.log('January');
+            console.log('September');
             break;
         case '10': 
-            console.log('January');
+            console.log('October');
             break;
         case '11': 
-            console.log('January');
+            console.log('November');
             break;
         case '12': 
-            console.log('January');
+            console.log('Desember');
             break;
     
         default:
@@ -59,8 +61,7 @@ function dataHandling2() {
     //slice
     var nama = input[1];
     var slice = nama.slice(0,15);
-    console.log(slice);
-    return input;
+    return slice;
 }
 
 console.log(dataHandling2());
