@@ -13,4 +13,4 @@ function palindrome(num) {
 
 console.log(palindrome(82));
 console.log(palindrome(81002));
-console.log(palindrome(10298));
+console.log(palindrome(102657786));
